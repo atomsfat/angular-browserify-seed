@@ -1,6 +1,12 @@
+require('angular/angular');
+require('angular-route/angular-route');
+require('./controllers.js');
+require('./directives.js');
+require('./filters.js');
+require('./services.js');
 'use strict';
 
-
+console.log(angular);
 // Declare app level module which depends on filters, and services
 angular.module('myApp', [
   'ngRoute',

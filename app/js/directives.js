@@ -1,3 +1,4 @@
+require('angular/angular');
 'use strict';
 
 /* Directives */
