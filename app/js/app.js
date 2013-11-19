@@ -1,5 +1,5 @@
-require('angular/angular');
-require('angular-route/angular-route');
+require('angular');
+require('angular-route');
 require('./controllers.js');
 require('./directives.js');
 require('./filters.js');

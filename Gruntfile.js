@@ -6,6 +6,18 @@ module.exports = function(grunt) {
         src: 'app/js/app.js',
         // Compile to a single file to add a script tag for in your HTML
         dest: 'dist/js/app.js',
+        options: {
+          shim:{
+            angular: {
+              path: "./bower_components/angular/angular.js",
+              exports: "angular"
+            },
+            "angular-route": {
+              path: "./bower_components/angular-route/angular-route.js",
+              exports: "ngRouteModule"
+            }
+          }
+        }
       },
     },
     copy: {

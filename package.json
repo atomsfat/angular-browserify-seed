@@ -11,8 +11,5 @@
     "karma-ng-scenario": "~0.1",
     "grunt-browserify": "~1.2.4",
     "napa": "~0.2.0"
-  },
-  "scripts": {
-    "install": "napa angular/bower-angular:angular angular/bower-angular-route:angular-route"
-    }
+  }
 }
