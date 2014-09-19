@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             }
           }
         }
-      },
+      }
     },
     copy: {
       all: {
@@ -26,16 +26,16 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'app/',
         src: ['**/*.html', '**/*.css'],
-        dest: 'dist/',
+        dest: 'dist/'
       },
       bower_components : {
         // This copies all the html and css into the dist/ folder
         expand: true,
         cwd: 'bower_components/',
         src: [ '**/*.js'],
-        dest: 'dist/bower_components',
+        dest: 'dist/bower_components'
       }
-    },
+    }
   });
 
   // Load the npm installed tasks
