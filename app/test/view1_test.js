@@ -1,5 +1,12 @@
 'use strict';
 
+var chai = require('chai')
+  , expect = chai.expect;
+
+require('angular');
+require("./app/js/app.js");
+
+
 describe('myApp.view1 module', function() {
 
   beforeEach(module('myApp.view1'));

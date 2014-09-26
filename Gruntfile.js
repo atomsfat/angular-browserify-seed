@@ -5,20 +5,12 @@ module.exports = function(grunt) {
         // A single entry point for our app
         src: 'app/js/app.js',
         // Compile to a single file to add a script tag for in your HTML
-        dest: 'dist/js/app.js',
-        options: {
-          shim:{
-            angular: {
-              path: "./bower_components/angular/angular.js",
-              exports: "angular"
-            },
-            "angular-route": {
-              path: "./bower_components/angular-route/angular-route.js",
-              exports: "ngRouteModule"
-            }
-          }
-        }
-      }
+        dest: 'dist/js/app.js'
+      },
+      // test: {
+      //   src: 'app/test/**.js',
+      //   dest: 'build/test-app.js'
+      // }
     },
     copy: {
       all: {
@@ -27,13 +19,6 @@ module.exports = function(grunt) {
         cwd: 'app/',
         src: ['**/*.html', '**/*.css'],
         dest: 'dist/'
-      },
-      bower_components : {
-        // This copies all the html and css into the dist/ folder
-        expand: true,
-        cwd: 'bower_components/',
-        src: [ '**/*.js'],
-        dest: 'dist/bower_components'
       }
     }
   });
